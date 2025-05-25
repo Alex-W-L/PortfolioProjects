@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <pubdate>19940101</pubdate>
+                <title>ZIP Codes</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>Interpretation of the USPS mail carrier ZIP Codes. Data derived from taxlot and master address information published with RLIS-Lite. This data in no way reflects exact USPS mail carrier routes and should be used accordingly. Date of last data update: 2024-07-23 This is official RLIS data. Contact Person: Christine Rutan christine.rutan@oregonmetro.gov 503-797-1669 RLIS Metadata Viewer: https://gis.oregonmetro.gov/rlis-metadata/#/details/179 RLIS Terms of Use: https://rlisdiscovery.oregonmetro.gov/pages/terms-of-use</abstract>
+            <purpose>Mapping and spatial analysis.</purpose>
+            <supplinf>The fact that ZIP Codes aren't required to be polygons makes them difficult to map. They are networks of streets served by mail carriers or just individual post offices and are a tool for mail delivery. They also change periodically as required to meet USPS operational needs. Metro has created this file by interpolating boundaries between occurrences of ZIP Codes on the ground using taxlot and master address information. However, this does not guarantee that the USPS delivery routes will follow this interpretation.</supplinf>
+        </descript>
+        <timeperd>
+            <timeinfo>
+                <sngdate>
+                    <caldate>20240723</caldate>
+                </sngdate>
+            </timeinfo>
+            <current>Ground condition</current>
+        </timeperd>
+        <status>
+            <progress>Complete</progress>
+            <update>As needed</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-123.486073179</westbc>
+                <eastbc>-121.651005666</eastbc>
+                <northbc>45.4616758499</northbc>
+                <southbc>44.885714569</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>Zip</themekey>
+                <themekey>Zipcode</themekey>
+                <themekey>zip code</themekey>
+                <themekey>usps</themekey>
+                <themekey>postal code</themekey>
+                <themekey>delivery routes</themekey>
+                <themekey>mail</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>Portland</placekey>
+                <placekey>Multnomah County</placekey>
+                <placekey>Washington County</placekey>
+                <placekey>Clackamas County</placekey>
+                <placekey>Oregon.  Clark County</placekey>
+                <placekey>Washington</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This database and GIS data are made available under the RLIS Open Database End User License Agreement. See https://rlisdiscovery.oregonmetro.gov/pages/open-database-license.</useconst>
+        <browse>
+            <browsen>http://library.oregonmetro.gov/rlisdiscovery/browse_graphic/zipcode.png</browsen>
+            <browsed>Zip code boundaries displayed as brown lines on a gray basemap of the region for orientation.</browsed>
+            <browset>PNG</browset>
+        </browse>
+    </idinfo>
+    <dataqual>
+        <posacc>
+            <horizpa>
+                <horizpar>Registered to tax lots. Street center lines were digitized from aerial orthophotography at +/- 10 feet accuracy. Tax lots were fit to the street centerlines. Beaverton, Oregon City and Tigard planning areas were improved to +/- 5 feet accuracy. Multnomah County was created with coordinate geometry using better control.</horizpar>
+            </horizpa>
+        </posacc>
+        <lineage>
+            <procstep>
+                <procdesc>Projection information (.prj file), compatible with ArcGIS 8.1, was added to the layer.</procdesc>
+                <procdate>20010715</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>In coverage the Zipno item modified from binary to character type. In the derived shapefile and SDE_layer the Zipcode field was also modified to a character type.</procdesc>
+                <procdate>20021031</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>In the coverage data the field Zipno is now a number item and Zipcode is character.  I have added a field for the feature Name.  This is in most cases the default name for the Zip Code area except when the default name does not accurately describe the polygon such as Portland instead Tigard.  A field, Location, has been added which is the City or County where the label point of the polygon falls.  A field named Type has been added which indicates the type of Zip Code: 1 = Standard, 2 = Post Office, 3 = Building.</procdesc>
+                <procdate>200504</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Data now maintained as a SDE GeoDataBase.  Updated Clark County zip codes, along with 97080 and 97236 in Gresham.</procdesc>
+                <procdate>20080201</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Major update of zip code boundary layer for Portland 3 county area. Zip code boundary primarily snapped to taxlot lines (formerly to street centerlines) using taxlot, MAF, employment, and ZIP+4 data layers as guides.</procdesc>
+                <procdate>20090504</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Dropped the following fields (ZIPNO, X_COORD, Y_COORD, SHAPE.AREA, SHAPE.LEN, LOCATION, PERIMETER). Added new field for STATE and calced values based on location. Recalced TYPE values from 1,2,3 codes to more intuative STANDARD ZIPCODE, POST OFFICE and UNIQUE ZIPCODE values. ZIPCODE field is numeric (long). --- ZFC</procdesc>
+                <procdate>20090504</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Major edits done throughout file with a focus on Damascus and the surrounding areas. Master address and taxlot data (SITEZIP) were used to make corrections and delineate boundaries. (ZFC)</procdesc>
+                <procdate>20090728</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Zip code boundaries following the boundary between the states of Oregon and Washington were updated to precise state boundary line coordinates. The boundary between Oregon and Washington is defined by ORS 186.520 which lists latitude and longitude coordinate stations connected by a series of straight lines along length of the boundary.</procdesc>
+                <procdate>20120423</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>General updates in areas around Happy Valley and Damascus in Clackamas County.</procdesc>
+                <procdate>20120726</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Deleted University Station and added Waterfront Station</procdesc>
+                <procdate>20130130</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Added new zipcodes  (97003 and 97078) in Beaverton /Aloha area. Extensive refinements in Clackamas County based on data provided by Clackamas County GIS.</procdesc>
+                <procdate>20140701</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Major edits throughout Clackamas County.</procdesc>
+                <procdate>20140715</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Changed zipcode field to precision 6 to ensure the values work properly in ArcGIS Desktop 10.3 as a long integer type.</procdesc>
+                <procdate>20150324</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>General updates to Clark County. Zip codes realigned to Oregon taxlot SITEZIP values throughout the file.</procdesc>
+                <procdate>20180629</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>ZIP Codes dissolved to eliminate duplicate values. In some cases, multipart features have been created.</procdesc>
+                <procdate>20180709</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Change to ZIP Code Name for 97223 based on update from Washington County.</procdesc>
+                <procdate>20180718</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Changed ZIPCODE field from Integer to String.</procdesc>
+                <procdate>20181102</procdate>
+            </procstep>
+            <procstep>
+                <procdesc>Updates to Oregon ZIP Codes based on CASS certification of Master Address File; general updates to Clark County.</procdesc>
+                <procdate>20200423</procdate>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype/>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>Zipcode.dbf</enttypl>
+                <enttypd>Description of the zip code polygons</enttypd>
+            </enttyp>
+            <attr>
+                <attrlabl>ZIPCODE</attrlabl>
+                <attrdef>Zipcode polygon associated with a USPS delivery area, post office or unique building or business</attrdef>
+                <attrdomv>
+                                        					
+                    
+                    <udom>NA</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>NAME</attrlabl>
+                <attrdef>Common name associated with zipcode</attrdef>
+                <attrdomv>
+                                        					
+                    
+                    <udom>NA</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>TYPE</attrlabl>
+                <attrdef>Type of zipcode (Standard, Post Office or Unique).</attrdef>
+                <attrdomv>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>Post Office</edomv>
+                                                						
+                        
+                        <edomvd>ZIP Code associated with specific post office.</edomvd>
+                                                					
+                    
+                    </edom>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>STANDARD ZIPCODE</edomv>
+                                                						
+                        
+                        <edomvd>Standard ZIP Code delivery route</edomvd>
+                                                					
+                    
+                    </edom>
+                                        					
+                    
+                    <edom>
+                                                						
+                        
+                        <edomv>UNIQUE ZIPCODE</edomv>
+                                                						
+                        
+                        <edomvd>ZIP Code associated with unique business or building.</edomvd>
+                                                					
+                    
+                    </edom>
+                                        					
+                    
+                    <udom>NA</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>STATE</attrlabl>
+                <attrdef>State abbreviation associated with zipcode</attrdef>
+                <attrdomv>
+                                        					
+                    
+                    <udom>NA</udom>
+                                        				
+                
+                </attrdomv>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Metro Data Resource Center</cntorg>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>unknown</addrtype>
+                    <address>600 NE Grand Ave.</address>
+                    <city>Portland</city>
+                    <state>OR</state>
+                    <postal>97232</postal>
+                </cntaddr>
+                <cntvoice>503 797-1742</cntvoice>
+                <cntfax>503 797-1909</cntfax>
+                <cntemail>drc@oregonmetro.gov</cntemail>
+            </cntinfo>
+        </distrib>
+        <resdesc>Email drc@oregonmetro.gov or call 503-797-1742 for further instructions.</resdesc>
+        <distliab>The information in this file was derived from digital databases on Metro's GIS. Care was taken in the creation of this file. Metro cannot accept any responsibility for errors, omissions, or positional accuracy. There are no warranties, expressed or implied.</distliab>
+        <stdorder>
+            <digform>
+                <digtinfo>
+                    <formname>Shapefile</formname>
+                    <transize>0</transize>
+                </digtinfo>
+                <digtopt>
+                    <onlinopt>
+                        <computer>
+                            <networka>
+                                <networkr>http://www.oregonmetro.gov/rlisdiscovery</networkr>
+                            </networka>
+                        </computer>
+                        <accinstr>Email drc@oregonmetro.gov or call 503-797-1742 for further instructions.</accinstr>
+                    </onlinopt>
+                    <offoptn>
+                        <offmedia/>
+                        <recfmt>ISO 9660</recfmt>
+                    </offoptn>
+                </digtopt>
+            </digform>
+            <fees>No cost</fees>
+        </stdorder>
+    </distinfo>
+    <metainfo>
+        <metd>20240723</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>Metro Data Resource Center</cntorg>
+                    <cntper>Christine Rutan</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>600 NE Grand Ave.</address>
+                    <city>Portland</city>
+                    <state>OR</state>
+                    <postal>97232</postal>
+                </cntaddr>
+                <cntvoice>503-797-1669</cntvoice>
+                <cntfax>503 797-1909</cntfax>
+                <cntemail>christine.rutan@oregonmetro.gov</cntemail>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
