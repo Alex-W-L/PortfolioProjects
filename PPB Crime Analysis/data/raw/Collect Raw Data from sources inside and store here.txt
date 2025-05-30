@@ -1,0 +1,2 @@
+Kaggle Aggregated Dataset: https://www.kaggle.com/datasets/michaellindsay/portland-crime
+PPB Portland Open Data Initiative Dataset: https://www.portland.gov/police/open-data
